@@ -1,0 +1,679 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>首页</title>
+<script src="js/jquery.js"></script>
+<script src="js/head.js"></script>
+<script type="text/javascript" src="js/Focus.js"></script>
+<style type="text/css" media="all">
+*{margin:0;padding:0;}
+img{border:0px; width:740px; height:300px;}
+.d1{width:740px;height:300px;overflow:hidden;border:#666666 2px solid;background-color:#fff;position:relative; float:left;}
+.loading{width:700px;border:#666666 2px solid;background:#000000;color:#FFCC00;font-size:12px;height:160px;text-align:center;padding-top:30px;position:absolute;left:0;top:0;}
+.oPic{width:960px;height:383px;position:relative;}
+.oPic li{width:740px;height:300px;position:absolute;left:0;top:0;z-index:1;margin:0;}
+.oTextbg{width:100%;height:30px;position:absolute;left:0;bottom:0;filter:alpha(opacity:50);opacity:0.5;background:#000; z-index:10;}
+.oText{width:90%;height:30px;position:absolute;left:0;bottom:0;z-index:20;background:none;}
+.oText li{height:30px;padding-left:15px;line-height:30px;position:absolute;left:0;top:30px;}
+.oText li a{font:bold 14px/30px "宋体";color:#fff;text-decoration:none;}
+.oBtn{position:absolute; z-index:10; right:10px; bottom:5px; font-size:13px; font-weight:bold; font-family:Arial, Helvetica, sans-serif;}
+.oBtn li{background:#666666;display:block;float:left;padding:1px 6px;margin-right:3px;color:#fff;text-decoration:none;cursor:pointer;}
+.oBtn li.active{color:#fff;background-color:#FF6633;}
+</style>
+</head>
+<link type="text/css" rel="stylesheet" href="css/test.css">
+<link href="images/logo1.png" rel="Shortcut Icon">
+<link rel="stylesheet" type="text/css" href="css/service.css" />
+<body>
+<!--效果html开始-->
+<div class="box_r">
+	<div class="top">
+    	<a href="javascript:void(0)"><span id="close"><font color="#333333" size="+2">×</font></span></a>
+    </div>
+    <div class="main">    
+        <p>在线客服1：<a href="http://www.internetke.com/" target="_blank">网页设计</a></p>
+        <p>在线客服2：<a href="http://www.internetke.com/" target="_blank">网页制作</a></p>
+        <p>在线客服3：<a href="http://www.internetke.com/" target="_blank">UI设计</a></p>
+        <p>在线客服4：<a href="http://www.internetke.com/" target="_blank">网页特效</a></p>
+        <img src="images/zx.gif" style="margin-top:10px; width:120px; height:30px;" />
+    </div>
+    <div class="bottom"></div>
+</div>
+<div class="box_m">
+	<ul>
+        <a href="javascript:;" class="close"></a>
+		<a href="http://www.internetke.com/" target="_blank" style="left:145px;"></a>
+    	<a href="http://www.internetke.com/" target="_blank" style="left:235px;"></a>
+    </ul>
+</div>
+<script src="js/jquery.js"></script>
+<script>
+$(function(){
+	$('.box_m').delay(3000).slideDown();
+	$('.close').click(function(){
+		$('.box_m').slideUp();
+	});
+	$("#close").click(function()
+	{
+		$('.box_m').slideUp();
+		$('.box_r').slideUp();
+		$('.box_r').delay(10000).slideDown();
+		$('.box_m').delay(13000).slideDown();
+	})
+})
+function op()
+{
+	var n=window.open("login.html","login","width=800px,height=600px");
+	width=screen.width;
+	heigh=screen.height;
+	n.moveTo(width/2-400,heigh/2-300);
+}
+	setTimeout("op()",2000);//超时只调用一次
+	
+</script>
+
+<!--效果html结束-->
+<div id="bigDiv">
+	<div id="head">
+    	<div id="head-1"></div>
+		<div id="head-2">
+			<div id="headleft"></div>
+            <div id="headmiddle">
+            	<div id="middle-1">
+                	<img class="headImg" src="images/logo.png">
+                </div>
+                <div id="middle-2">
+                	<div id="middleleft">
+                    	<ul>
+                        	<a href="www.baidu.com"><li style="color:#000000;">首页</li></a>
+                            <a href="company.html"><li>公司</li></a>
+                            <a href="recommend.html"><li>论坛</li></a>
+                            <a href="resume.html"><li>我的简历</li></a>
+                            <a href="job.html"><li>发布职位</li></a>
+                        </ul>
+                    </div>
+                    <div id="middleright">
+                    	<a href="login.html"><span>登录|</span></a>
+                        <a href="register.html"><span>注册</span></a>
+                    </div>
+                </div>
+            </div>
+            <div id="headright"></div>
+		</div>
+    </div>
+    <!--head end-->
+    <!-- left start-->
+    <div id="container1"></div>  
+    <div id="container2">
+    	<div id="container2-1" class="container container2-1">
+        	<pre>
+            	<span>技术                     &gt;</span>
+                <span><a href="#">Java</a>  <a href="#">PHP</a>  <a href="#">C</a>  <a href="#">C++</a>  <a href="#">IOS</a></span>
+                <span><a href="#">android</a>  <a href="#">前端开发</a>  <a href="#">测试</a></span>
+                <span><a href="#">技术经理</a> <a href="#">项目经理</a> <a href="#">架构师</a></span>
+            </pre>
+        </div>
+        <div id="container2-2" class="container container2-2">
+        	<pre>
+            	<span>产品                     &gt;</span>
+                <span><a href="#">产品经理</a>   <a href="#">产品助理</a></span>
+                <span><a href="#">无线产品经理</a>   <a href="#">游戏策划</a></span>
+            </pre>
+        </div>
+        <div id="container2-3" class="container container2-3">
+        	<pre>
+            	<span>设计                     &gt;</span>
+                <span><a href="#">UI</a>    <a href="#">UE</a>    <a href="#">设计师</a></span>
+                <span><a href="#">交互设计</a>  <a href="#">技术分析</a></span>
+            </pre>
+        </div>
+        <div id="container2-4" class="container container2-4">
+        	<pre>
+            	<span>运营                     &gt;</span>
+                <span><a href="#">运营</a>    <a href="#">游戏运营</a>   <a href="#">编辑</a></span> 
+            </pre>
+        </div>
+        <div id="container2-5" class="container container2-5">
+        	<pre>
+            	<span>市场与销售               &gt;</span>
+                <span><a href="#">市场推广</a>     <a href="#">市场策划</a> </span>
+                <span><a href="#">活动策划</a>  <a href="#">BD</a>  <a href="#">销售经理</a></span>
+            </pre>
+        </div>
+        <div id="container2-6" class="container container2-6">
+        	<pre>
+            	<span>职能                     &gt;</span>
+                <span><a href="#">HR</a>  <a href="#">会计</a>  <a href="#">行政</a>   <a href="#">出纳</a></span> 
+            </pre>
+        </div>
+        <div id="container2-7" class="container">
+        	<pre>
+            	<span><a href="subscription.html">订阅职位                 &gt;</a><hr size="5" style="background-color:#009966" /></span>
+            </pre>
+        </div>
+        <div id="hidediv1">
+        	<table id="mytable1">
+            	<tr>
+                	<td width="100px" class="backcolor"><a href="#">后端开发</a></td>
+                    <td><span><a href="#">Java</a>&nbsp;|<a href="#">C++</a>&nbsp;|<a href="#">PHP</a>&nbsp;|<a href="#">数据挖掘</a></span>
+                    <span>&nbsp;|<a href="#">C</a>&nbsp;|<a href="#">C#</a>&nbsp;|<a href="#">.NET</a>&nbsp;|<a href="#">Hadshop</a></span>
+                    <span>&nbsp;|<a href="#">Python</a>&nbsp;|<a href="#">Delphi</a>&nbsp;|<a href="#">VB</a>&nbsp;|<a href="#">Pert</a>&nbsp;|<a href="#">Rubt</a>&nbsp;|<a href="#">Node.js</a></span></td>
+                </tr>
+                <tr>
+                	<td class="backcolor"><a href="#">移动开发</a></td>
+                    <td>
+                    	<span><a href="#">HTML</a>&nbsp;|<a href="#">Android</a>&nbsp;|<a href="#">IOS</a>&nbsp;|<a href="#">WP</a></span>
+                    </td>
+                </tr>
+                <tr>
+                	<td class="backcolor"><a href="#">前端开发</a></td>
+                    <td><span><a href="#">web前端</a>&nbsp;|<a href="#">falsh</a>&nbsp;|<a href="#">HTML5</a>&nbsp;|<a href="#">U3D</a>&nbsp;|<a href="#">Javascript</a></span></td>
+                </tr>
+                <tr>
+                	<td class="backcolor"><a href="#">测试</a></td>
+                    <td><span><a href="#">自动化测试</a>&nbsp;|<a href="#">测试工程师</a>&nbsp;|<a href="#">功能测试</a>&nbsp;|<a href="#">性能测试</a>&nbsp;|<a href="#">测试开发</a></span></td>
+                </tr>
+                <tr>
+                	<td class="backcolor"><a href="#">运维</a></td>
+                    <td><a href="#">运维工程师</a>&nbsp;|<a href="#">运维开发工程师</a>&nbsp;|<a href="#">网络工程师</a>&nbsp;|<a href="#">系统工程师</a></td>
+                </tr>
+                <tr>
+                	<td class="backcolor"><a href="#">DBA</a></td>
+                    <td><a href="#">MYSQL</a>&nbsp;|<a href="#">SQSVER</a>&nbsp;|<a href="#">Oracle</a>&nbsp;|<a href="#">DB2</a>&nbsp;|<a href="#">MongoDB</a></td>
+                </tr>
+                <tr>
+                	<td class="backcolor"><a href="#">项目管理</a></td>
+                    <td><span><a href="#">项目经理</a></span></td>
+                </tr>
+                <tr>
+                	<td class="backcolor"><a href="#">高端职位</a></td>
+                    <td><span><a href="#">技术经理</a>&nbsp;|<a href="#">技术总监</a>&nbsp;|<a href="#">测试经理</a>&nbsp;|<a href="#">架构师</a>&nbsp;|<a href="#">CTO</a>&nbsp;|<a href="#">运营总监</a></span></td>
+                </tr>
+            </table>
+        </div><!--left1 end-->
+         <div id="hidediv2">
+          <table id="mytable2">
+        	<tr>
+            	<td width="100px" class="backcolor"><a href="#">产品经理</a></td>
+                <td><span><a href="#">产品经理</a>&nbsp;|<a href="#">网页产品经理</a>&nbsp;|<a href="#">移动产品经理</a>&nbsp;|<a href="#">产品助理</a>&nbsp;|</span>
+                <span><a href="#">数据产品经理</a>&nbsp;|<a href="#">电商产品经理</a>&nbsp;|<a href="#">游戏策划</a></span>
+                </td>
+            </tr>
+            <tr>
+            	<td class="backcolor"><a href="#">产品设计师</a></td>
+                <td><span><a href="#">网页产品设计师</a>&nbsp;|<a href="#">无线产品设计师</span></td>
+            </tr>
+            <tr>
+            	<td class="backcolor"><a href="#">高端职位</a></td>
+                <td><span><a href="#">产品部经理</a>&nbsp;|<a href="#">技术总监</a></span></td>
+            </tr>
+        </table>
+    	</div><!--left2 end-->
+        <div id="hidediv3">
+        	<table id="mytable3">
+        	<tr>
+            	<td width="100px" class="backcolor"><a href="#">视觉设计</a></td>
+                <td><span><a href="#">视觉设计师</a>&nbsp;|<a href="#">网页设计师</a>&nbsp;|<a href="#">falsh设计师</a>&nbsp;|</span>
+                <span><a href="#">UI设计师</a>&nbsp;|<a href="#">平面设计师</a>&nbsp;|<a href="#">美页设计师</a>&nbsp;|<a href="#">广告设计师</a>&nbsp;|</span>
+                <span><a href="#">多媒体设计师</a>&nbsp;|<a href="#">原画师师</a><a href="#">APP设计师</a>&nbsp;|</span>
+                <span><a href="#">游戏场景</a>&nbsp;|<a href="#">游戏特效</a>&nbsp;|<a href="#">游戏角色</a></span>
+                </td>
+            </tr>
+            <tr>
+            	<td class="backcolor"><a href="#">交互设计</a></td>
+                <td><span><a href="#">交互设计师</a>&nbsp;|<a href="#">无线交互设计师</span>
+                	<span><a href="#">&nbsp;|网页交互设计师</a>&nbsp;|<a href="#">硬件交互设计师</a></span>
+                </td>
+            </tr>
+            <tr>
+            	<td class="backcolor"><a href="#">用户研究</a></td>
+                <td><span><a href="#">数据分析师</a>&nbsp;|<a href="#">用户研究院</a>&nbsp;|<a href="#">游戏数值策划</a></span></td>
+            </tr>
+            <tr>
+            	<td class="backcolor"><a href="#">高端职位</a></td>
+                <td><span><a href="#">设计经理</a>&nbsp;|<a href="#">设计总监</a>&nbsp;|<a href="#">美页设计师</a></span>				 				<span><a href="#">视觉设计总监</a>&nbsp;|<a href="#">硬件设计总监</a>&nbsp;|<a href="#">用户研究总监</a></span>
+                </td>
+            </tr>
+        </table>
+        </div><!--left3 end-->
+        <div id="hidediv4">
+        	<table id="mytable4">
+            	<tr>
+            	<td width="100px" class="backcolor"><a href="#">运营</a></td>
+                <td><span><a href="#">用户运营</a>&nbsp;|<a href="#">产品运营</a>&nbsp;|<a href="#">数据运营</a>&nbsp;|</span>
+                <span><a href="#">内容运营</a>&nbsp;|<a href="#">活动运营</a>&nbsp;|<a href="#">商家运营</a>&nbsp;|<a href="#">品类运营</a>&nbsp;|</span>
+                <span><a href="#">游戏运营</a>&nbsp;|<a href="#">网络推广</a></span>
+                </td>
+            </tr>
+            <tr>
+            	<td class="backcolor"><a href="#">编辑</a></td>
+                <td><span><a href="#">副主编辑</a>&nbsp;|<a href="#">类容编辑</a></span>
+                </td>
+            </tr>
+            <tr>
+            	<td class="backcolor"><a href="#">客服</a></td>
+                <td><span><a href="#">售前客服</a>&nbsp;|<a href="#">售后客服</a></span></td>
+            </tr>
+            <tr>
+            	<td class="backcolor"><a href="#">高端职位</a></td>
+                <td><span><a href="#">主编</a>&nbsp;|<a href="#">运营总监</a>&nbsp;|<a href="#">COO</a></span>				 	
+                </td>
+            </tr>
+            </table>
+        </div><!--left4 end-->
+        <div id="hidediv5">
+        	<table id="mytable5">
+            <tr>
+            	<td width="100px" class="backcolor"><a href="#">市场/营销</a></td>
+                <td><span><a href="#">市场营销</a>&nbsp;|<a href="#">市场顾问</a>&nbsp;|<a href="#">市场策划</a>&nbsp;|</span>
+                <span><a href="#">市场推广</a>&nbsp;|<a href="#">SEM</a>&nbsp;|<a href="#">SEO</a>&nbsp;|<a href="#">商务渠道</a>&nbsp;|</span>
+                <span><a href="#">商务数据分析</a>&nbsp;|<a href="#">活动策划</a></span>
+                </td>
+            </tr>
+            <tr>
+            	<td class="backcolor"><a href="#">公关</a></td>
+                <td><span><a href="#">媒介经理</a>&nbsp;|<a href="#">广告协调</a>&nbsp;|<a href="#">品牌公关</a></span>
+                </td>
+            </tr>
+            <tr>
+            	<td class="backcolor"><a href="#">销售</a></td>
+                <td><span><a href="#">销售专员</a>&nbsp;|<a href="#">销售经理</a>&nbsp;|<a href="#">客户经理</a>&nbsp;|<a href="#">大客户代表</a></span>
+                <span><a href="#">BD经理</a>&nbsp;|<a href="#">商务渠道</a>&nbsp;|<a href="#">销售渠道</a>&nbsp;|<a href="#">代理商渠道</a></span></td>
+            </tr>
+            <tr>
+            	<td class="backcolor"><a href="#">高端职位</a></td>
+                <td><span><a href="#">市场总监</a>&nbsp;|<a href="#">商务总监</a>&nbsp;|<a href="#">COO</a></span>				 	&nbsp;|<a href="#">CMO</a>&nbsp;|<a href="#">公关总监</a>
+                </td>
+            </tr>
+            </table>
+        </div><!--left5 end-->
+        <div id="hidediv6">
+    	<table id="mytable6">
+            <tr>
+            	<td width="100px" class="backcolor"><a href="#">人力资源</a></td>
+                <td><span><a href="#">人力资源</a>&nbsp;|<a href="#">招聘</a>&nbsp;|<a href="#">HRDB</a>&nbsp;|</span>
+                <span><a href="#">人事HR</a>&nbsp;|<a href="#">培训经理</a>&nbsp;|<a href="#">SEO</a>&nbsp;|<a href="#">商务渠道</a>&nbsp;|</span>           
+                </td>
+            </tr>
+            <tr>
+            	<td class="backcolor"><a href="#">行政</a></td>
+                <td><span><a href="#">助理</a>&nbsp;|<a href="#">前台</a>&nbsp;|<a href="#">法务</a>&nbsp;|<a href="#">行政</a></span></span>
+                </td>
+            </tr>
+            <tr>
+            	<td class="backcolor"><a href="#">财政</a></td>
+                <td><span><a href="#">会计</a>&nbsp;|<a href="#">出纳</a>&nbsp;|<a href="#">财务</a></span>
+				</td>
+            </tr>
+            <tr>
+            	<td class="backcolor"><a href="#">高端职位</a></td>
+                <td><span><a href="#">行政总监</a>&nbsp;|<a href="#">财务总监</a>&nbsp;|<a href="#">HRM</a></span>				 	&nbsp;|<a href="#">CFO</a>
+                </td>
+            </tr>
+        </table>
+    	</div><!--left6 end-->    
+    </div>
+    <div id="container3"></div>
+    <div id="container4">
+    <!--这里是搜索框的div-->
+    	<div id="search">
+        <form>
+        	<div id="search-1">
+            	<a href="#"><span>公司<font style="color:#009966">&nbsp;▼</font></span></a>               
+            </div>
+            <div id="search-2">            	
+                	<input type="text" style="width:100%; height:36px;" placeholder="请输入公司名称 如：拉钩" />            </div>
+            <div id="search-3">
+            	<span><a href="#">搜索</a></span>
+            </div>
+        </form>
+        </div>
+        <div id="hiddenDiv">
+        	  <a href="#"><span>职位</span></a>
+        </div>
+        <div id="contentsearch"><span>热门搜索：</span><a href="#">java</a>&nbsp;<a href="#">php</a>&nbsp;<a href="#">andriod</a>&nbsp;<a href="ios"><a href="#">前端</a>&nbsp;<a href="#">产品经理</a>&nbsp;<a href="#">UI</a>&nbsp;<a href="#">运营</a>&nbsp;<a href="#">BD</a>&nbsp;<a href="#">实习</a>
+        </div>
+        
+        <!--这里是banner图的切换div-->
+        <div id="banner">
+        	<!--效果开始-->
+			<div id="fade_focus" class="d1"> 
+		    	<ul class="oPic">
+			      <li><a href="http://www.internetke.com/m7_js_mode2_62.html" target="_blank"><img src="images/download/11.jpg" width="960" height="383" alt="jQuery/Js多行文字图片左右滚动网页特效" /></a></li>
+			      <li><a href="http://www.internetke.com/m7_js_mode2_61.html" target="_blank"><img src="images/download/12.jpg"  width="960" height="383" alt="Flash+JS电子图书翻书网页特效" /></a></li>
+			      <li><a href="http://www.internetke.com/m7_js_mode2_60.html" target="_blank"><img src="images/download/17.jpg"  width="960" height="383" alt="纯js带按钮左右自动循环滚动banner图" /></a></li>
+			      <li><a href="http://www.internetke.com/m7_js_mode2_59.html" target="_blank"><img src="images/download/23.jpg"  width="960" height="383" alt="jQuery左右箭头/按钮多样式平滑滚动焦点图" /></a></li>
+			    </ul>
+		    <div class="oTextbg"></div>
+    		<ul class="oText">
+	  		     <li><a href="http://www.internetke.com/m7_js_mode2_62.html" target="_blank">想象力创造世界</a></li>
+			     <li><a href="http://www.internetke.com/m7_js_mode2_61.html" target="_blank">能力成就未来</a></li>
+			     <li><a href="http://www.internetke.com/m7_js_mode2_60.html" target="_blank">生活更加美好</a></li>
+			     <li><a href="http://www.internetke.com/m7_js_mode2_59.html" target="_blank">一切源于实力</a></li>
+		    </ul>
+		    <div class="oBtn">
+		     <li>1</li>
+		     <li>2</li>
+		     <li>3</li>
+		     <li>4</li>
+    		</div>
+		</div>
+<script type="text/javascript">initFocus('fade_focus');</script>
+<!--End-->
+	</div>       
+        <div id="AD">
+        	<div class="ad">
+        		<img src="images/adimg/1.jpg" />
+       		</div>
+        	<div class="ad">
+        		<img src="images/adimg/2.jpg" />
+	        </div>
+    	    <div class="ad">
+        		<img src="images/adimg/3.png" />
+	        </div>
+            <div class="ad">
+        		<img src="images/adimg/4.jpg" />
+	        </div>
+    	    <div class="ad">
+        		<img src="images/adimg/5.png" />
+	        </div>
+    	    <div class="ad">
+        		<img src="images/adimg/6.jpg" />
+	        </div>
+            <div id="ad1" class="hidead">
+            	<span class="adtext">
+                	联想
+                </span><hr>
+                世界因联想而精彩
+            </div>
+            <div id="ad2" class="hidead">
+            	<span class="adtext">
+                	淘米
+                </span><hr>
+                将心注入追求卓越
+            </div>
+            <div id="ad3" class="hidead">
+            <span class="adtext">
+                	优酷
+                </span><hr>
+                专注于视频，引领中国视频企业
+            </div>
+            <div id="ad4" class="hidead">
+            	<span class="adtext">
+                	斯特沃克
+                </span><hr>
+                意见全球信息技术服务公司
+            </div>
+            <div id="ad5" class="hidead">
+            <span class="adtext">
+                	奇猫
+                </span><hr>
+                一家互联网公司。专注于互联网的研发
+            </div>
+            <div id="ad6" class="hidead">
+            	<span class="adtext">
+                	糖堆网
+                </span><hr>
+                分享收集生活中的美好，遇见世界上的另一个你
+            </div>
+        </div>
+        <div id="work">
+        	<div class="workstation" id="workstation1"><a href="javascript:void(0)">热门职位</a></div>
+            <div class="workstation" id="workstation2"><a href="javascript:void(0)">最新职位</a></div>
+        </div>
+        <div id="workdiv">
+			<div id="workdivleft">
+				<div id="workdivleft1" class="workdiv">            
+	         			<p><a href="#">运营总监</a>&nbsp;<span class="fontcolor">[北京]</span></p><br>
+                        <p class="fontsize"><span class="fontcolor">月薪：</span> 15k-20k <span class="fontcolor">经验：</span> 3-5年 <span class="fontcolor">最低学历：</span> 本科<br><br> 
+<span class="fontcolor">职位诱惑：</span>发展前景<br><br>1天前发布</p>
+                </div>
+                <div id="workdivleft2" class="workdiv">
+                	<p><a href="#">售前工程师（有运维经验者优先）</a>&nbsp;<span class="fontcolor">[北京]</span></p><br>
+                    <p class="fontsize"><span class="fontcolor">月薪：</span> 6k-12k <span class="fontcolor">经验：</span> 3-5年 <span class="fontcolor">最低学历：</span> 大专<br><br> 
+<span class="fontcolor">职位诱惑：</span>五险一金+商业保险+带薪年假+奖金等<br><br>1天前发布</p> 
+                </div>
+                <div id="workdivleft3" class="workdiv">
+                	<p><a href="#">手机游戏运营</a>&nbsp;<span class="fontcolor">[南京]</span></p><br>
+                    <p class="fontsize"><span class="fontcolor">月薪：</span> 4k-8k <span class="fontcolor">经验：</span> 1-3年 <span class="fontcolor">最低学历：</span> 本科<br><br> 
+<span class="fontcolor">职位诱惑：</span>工作氛围和谐~正面激励成长~福利好等<br><br>1天前发布</p> 
+                </div>
+                 <div id="workdivleft4" class="workdiv">
+                	<p><a href="#">葡萄酒内容运营专员</a>&nbsp;<span class="fontcolor">[广州]</span></p><br>
+                    <p class="fontsize"><span class="fontcolor">月薪：</span> 5k-8k <span class="fontcolor">经验：</span> 1-3年 <span class="fontcolor">最低学历：</span> 本科<br><br> 
+<span class="fontcolor">职位诱惑：</span>喝着世界美酒快乐地工作！<br><br>1天前发布</p> 
+                </div>
+                 <div id="workdivleft5" class="workdiv">
+                	<p><a href="#">百度游戏UI设计</a>&nbsp;<span class="fontcolor">[北京]</span></p><br>
+                    <p class="fontsize"><span class="fontcolor">月薪：</span> 7k-14k <span class="fontcolor">经验：</span> 1-3年 <span class="fontcolor">最低学历：</span> 本科<br><br> 
+<span class="fontcolor">职位诱惑：</span>喜欢游戏，喜欢生活，游戏生活~<br><br>1天前发布</p> 
+                </div>
+                 <div id="workdivleft6" class="workdiv">
+                	<p><a href="#">IOS</a>&nbsp;<span class="fontcolor">[北京]</span></p><br>
+                    <p class="fontsize"><span class="fontcolor">月薪：</span> 13k-26k <span class="fontcolor">经验：</span> 不限 <span class="fontcolor">最低学历：</span> 本科<br><br> 
+<span class="fontcolor">职位诱惑：</span>中国第一只能手机广告平台~<br><br>1天前发布</p> 
+                </div>
+                <div id="workdivleft7" class="workdiv">
+                	<p><a href="#">JAVA</a>&nbsp;<span class="fontcolor">[北京]</span></p><br>
+                    <p class="fontsize"><span class="fontcolor">月薪：</span> 13k-25k <span class="fontcolor">经验：</span> 1-3年 <span class="fontcolor">最低学历：</span> 本科<br><br> 
+<span class="fontcolor">职位诱惑：</span>项目快速发展，技术氛围浓厚，有业界大牛~<br><br>09:21发布</p> 
+                </div>
+                <div id="workdivleft8" class="workdiv">
+                	<p><a href="#">WEB前端</a>&nbsp;<span class="fontcolor">[上海]</span></p><br>
+                    <p class="fontsize"><span class="fontcolor">月薪：</span> 6k-12k <span class="fontcolor">经验：</span> 1-3年 <span class="fontcolor">最低学历：</span> 本科<br><br> 
+<span class="fontcolor">职位诱惑：</span>靠谱的工程师要来靠谱的公司<br><br>09:21发布</p> 
+                </div>
+                <div id="workdivleft9" class="workdiv">
+                	<p><a href="#">JAVA</a>&nbsp;<span class="fontcolor">[杭州]</span></p><br>
+                    <p class="fontsize"><span class="fontcolor">月薪：</span> 15k-30k <span class="fontcolor">经验：</span> 1-3年 <span class="fontcolor">最低学历：</span> 本科<br><br> 
+<span class="fontcolor">职位诱惑：</span>有技术挑战、有成长机会、有漂亮妹子<br><br>09:21发布</p> 
+                </div>
+                <div id="workdivleft10" class="workdiv">
+                	<p><a href="#">测试实习生</a>&nbsp;<span class="fontcolor">[上海]</span></p><br>
+                    <p class="fontsize"><span class="fontcolor">月薪：</span> 3k-5k <span class="fontcolor">经验：</span> 1-3年 <span class="fontcolor">最低学历：</span> 本科<br><br> 
+<span class="fontcolor">职位诱惑：</span>实习通过，毕业直接转正，实习期有餐贴<br><br>0:21发布</p> 
+                </div>
+                 <div id="workdivleft11" class="workdiv">
+                	<p><a href="#">网页产品设计师</a>&nbsp;<span class="fontcolor">[北京]</span></p><br>
+                    <p class="fontsize"><span class="fontcolor">月薪：</span> 8k-10k <span class="fontcolor">经验：</span> 1-3年 <span class="fontcolor">最低学历：</span> 本科<br><br> 
+<span class="fontcolor">职位诱惑：</span>六险一金，饭补，班车，晋升机制，氛围好<br><br>14:15发布</p> 
+                </div>
+                <div id="workdivleft12" class="workdiv">
+                	<p><a href="#">产品经理（工商系统项目）</a>&nbsp;<span class="fontcolor">[北京]</span></p><br>
+                    <p class="fontsize"><span class="fontcolor">月薪：</span> 10k-20k <span class="fontcolor">经验：</span> 5-10年 <span class="fontcolor">最低学历：</span> 本科<br><br> 
+<span class="fontcolor">职位诱惑：</span>和一群聪明的人共事 <br><br>14:15发布</p> 
+                </div>
+                <div id="workdivleft13" class="workdiv">
+                	<p><a href="#">团队经理</a>&nbsp;<span class="fontcolor">[北京]</span></p><br>
+                    <p class="fontsize"><span class="fontcolor">月薪：</span> 10k-15k <span class="fontcolor">经验：</span> 不限 <span class="fontcolor">最低学历：</span> 大专<br><br> 
+<span class="fontcolor">职位诱惑：</span>位置佳，环境优越，发展空间大，薪酬高<br><br>2天前发布</p> 
+                </div>
+                <div id="workdivleft14" class="workdiv">
+                	<p><a href="#">手游商务</a>&nbsp;<span class="fontcolor">[上海]</span></p><br>
+                    <p class="fontsize"><span class="fontcolor">月薪：</span> 6k-10k <span class="fontcolor">经验：</span> 不限 <span class="fontcolor">最低学历：</span> 大专<br><br> 
+<span class="fontcolor">职位诱惑：</span>一年两次调薪，免费早、晚餐，项目、年终奖<br><br>2016-12-27</p> 
+                </div>
+                <div id="workdivleft15" class="workdiv">
+                	<p><a href="#">市场推广</a>&nbsp;<span class="fontcolor">[上海]</span></p><br>
+                    <p class="fontsize"><span class="fontcolor">月薪：</span> 7k-12k <span class="fontcolor">经验：</span> 1-3年<span class="fontcolor">最低学历：</span> 大专<br><br> 
+<span class="fontcolor">职位诱惑：</span>年度16薪 市场营销发展方向<br><br>1天前发布</p> 
+                </div>
+            </div>            
+            <div id="workdivright">
+            	 <div id="workdivright1" class="workdiv underline">
+                	<p><a href="#">节操精选</a></p><br>
+                    <p class="fontsize"><span class="fontcolor">领域：</span>移动互联网<span class="fontcolor">创始人：</span>陈桦<span class="fontcolor">阶段：</span>初创型<br><br> 
+<span class="fontcolor">规模：</span>小于15人<br><br><span class="fontcolor"><input readonly="readonly" size="6" placeholder="移动互联网" />&nbsp;<input placeholder="五险一金" size="4" readonly="readonly"/>&nbsp;<input size="4" placeholder="扁平管理" readonly="readonly"/></span></p> 
+                </div>
+                 <div id="workdivright2" class="workdiv underline">
+                	<p><a href="#">监控宝</a></p><br>
+                    <p class="fontsize"><span class="fontcolor">领域：</span>云计算\大数据<span class="fontcolor">阶段：</span>成长型(A轮)<br><br><span class="fontcolor">规模：</span>50-150人<br><br><span class="fontcolor"><input readonly="readonly" size="2" placeholder="商业险" />&nbsp;<input placeholder="五险一金" size="4" readonly="readonly"/>&nbsp;<input size="2" placeholder="福利好" readonly="readonly"/></span></p> 
+                </div>
+                <div id="workdivright3" class="workdiv underline">
+                	<p><a href="#">爱游戏（中国电信游戏基地）</a></p><br>
+                    <p class="fontsize"><span class="fontcolor">领域：</span>移动互联网,游戏<span class="fontcolor">阶段：</span>初创型(未融资)<br><br><span class="fontcolor">规模：</span>150-500人<br><br><span class="fontcolor"><input readonly="readonly" size="4" placeholder="带薪年假" />&nbsp;<input placeholder="五险一金" size="4" readonly="readonly"/>&nbsp;<input size="4" placeholder="股票期权" readonly="readonly"/></span></p> 
+                </div>
+                 <div id="workdivright4" class="workdiv underline">
+                	<p><a href="#">酒咔嚓</a></p><br>
+                    <p class="fontsize"><span class="fontcolor">领域：</span>移动互联网,生活服务<span class="fontcolor">阶段：</span>初创型(未融资)<br><br><span class="fontcolor">规模：</span>15-50人<br><br><span class="fontcolor"><input readonly="readonly" size="4" placeholder="年底双薪" />&nbsp;<input placeholder="五险一金" size="4" readonly="readonly"/>&nbsp;<input size="4" placeholder="股票期权" readonly="readonly"/></span></p> 
+                </div>
+                <div id="workdivright5" class="workdiv underline">
+                	<p><a href="#">百度游戏</a></p><br>
+                    <p class="fontsize"><span class="fontcolor">领域：</span>移动互联网务<span class="fontcolor">创始人：</span>李彦宏<span class="fontcolor">阶段：</span>上市公司<br><br><span class="fontcolor">规模：</span>2000人以上<br><br><span class="fontcolor"><input readonly="readonly" size="4" placeholder="年终分红" />&nbsp;<input placeholder="五险一金" size="4" readonly="readonly"/>&nbsp;<input size="4" placeholder="股票期权" readonly="readonly"/></span></p> 
+                </div>
+                 <div id="workdivright6" class="workdiv underline">
+                	<p><a href="#">多盟domob</a></p><br>
+                    <p class="fontsize"><span class="fontcolor">领域：</span>移动互联网务<span class="fontcolor">创始人：</span>李彦宏<span class="fontcolor">阶段：</span>上市公司<br><br><span class="fontcolor">规模：</span>2000人以上<br><br><span class="fontcolor"><input readonly="readonly" size="4" placeholder="年终分红" />&nbsp;<input placeholder="五险一金" size="4" readonly="readonly"/>&nbsp;<input size="4" placeholder="股票期权" readonly="readonly"/></span></p> 
+                </div>
+                 <div id="workdivright7" class="workdiv underline">
+                	<p><a href="#">搜狗</a></p><br>
+                    <p class="fontsize"><span class="fontcolor">领域：</span>移动互联网，搜索<span class="fontcolor">创始人：</span>齐玉杰<span class="fontcolor">阶段：</span>成长型(B轮)<br><br><span class="fontcolor">规模：</span>150-500人<br><br><span class="fontcolor"><input readonly="readonly" size="4" placeholder="绩效奖金" />&nbsp;<input placeholder="五险一金" size="4" readonly="readonly"/>&nbsp;<input size="4" placeholder="股票期权" readonly="readonly"/></span></p> 
+                </div>
+                 <div id="workdivright8" class="workdiv underline">
+                	<p><a href="#">杰派网络</a></p><br>
+                    <p class="fontsize"><span class="fontcolor">领域：</span>移动互联网<span class="fontcolor">创始人：</span>顾培盟<span class="fontcolor">阶段：</span>初创型(未融资)<br><br><span class="fontcolor">规模：</span>15-50人<br><br><span class="fontcolor"><input readonly="readonly" size="4" placeholder="年终分红" />&nbsp;<input placeholder="五险一金" size="4" readonly="readonly"/>&nbsp;<input size="4" placeholder="午餐补助" readonly="readonly"/></span></p> 
+                </div>
+                 <div id="workdivright9" class="workdiv underline">
+                	<p><a href="#">蘑菇街</a></p><br>
+                    <p class="fontsize"><span class="fontcolor">领域：</span>电子商务<span class="fontcolor">创始人：</span>陈琪<span class="fontcolor">阶段：</span>成熟型(C轮)<br><br><span class="fontcolor">规模：</span>150-500人<br><br><span class="fontcolor"><input readonly="readonly" size="4" placeholder="年终分红" />&nbsp;<input placeholder="五险一金" size="4" readonly="readonly"/>&nbsp;<input size="4" placeholder="股票期权" readonly="readonly"/></span></p> 
+                </div>
+                 <div id="workdivright10" class="workdiv underline">
+                	<p><a href="#">一铺科技</a></p><br>
+                    <p class="fontsize"><span class="fontcolor">领域：</span> 移动互联网,企业服务<span class="fontcolor">创始人：</span>William<span class="fontcolor">阶段：</span>成长型(A轮)<br><br><span class="fontcolor">规模：</span>150-500人<br><br><span class="fontcolor"><input readonly="readonly" size="4" placeholder="年终分红" />&nbsp;<input placeholder="五险一金" size="4" readonly="readonly"/>&nbsp;<input size="4" placeholder="单身住宿" readonly="readonly"/></span></p> 
+                </div>
+                 <div id="workdivright11" class="workdiv underline">
+                	<p><a href="#">途家网</a></p><br>
+                    <p class="fontsize"><span class="fontcolor">领域：</span>移动互联网,O2O<span class="fontcolor">创始人：</span>罗军<span class="fontcolor">阶段：</span>成长型(B轮)<br><br><span class="fontcolor">规模：</span>500-2000人<br><br><span class="fontcolor"><input readonly="readonly" size="4" placeholder="年终分红" />&nbsp;<input placeholder="五险一金" size="4" readonly="readonly"/>&nbsp;<input size="4" placeholder="股票期权" readonly="readonly"/></span></p> 
+                </div>
+                 <div id="workdivright12" class="workdiv underline">
+                	<p><a href="#">PEVC</a></p><br>
+                    <p class="fontsize"><span class="fontcolor">领域：</span>金融互联网<span class="fontcolor">创始人：</span>兰宁羽<span class="fontcolor">阶段：</span>成长型(A轮)<br><br><span class="fontcolor">规模：</span>50-150人<br><br><span class="fontcolor"><input readonly="readonly" size="4" placeholder="年终分红" />&nbsp;<input placeholder="五险一金" size="4" readonly="readonly"/>&nbsp;<input size="4" placeholder="股票期权" readonly="readonly"/></span></p> 
+                </div>
+                 <div id="workdivright13" class="workdiv underline">
+                	<p><a href="#">宜信公司</a></p><br>
+                    <p class="fontsize"><span class="fontcolor">领域：</span>移动互联网务<span class="fontcolor">创始人：</span>唐宁<span class="fontcolor">阶段：</span>上市公司<br><br><span class="fontcolor">规模：</span>2000人以上<br><br><span class="fontcolor"><input readonly="readonly" size="4" placeholder="年终分红" />&nbsp;<input placeholder="五险一金" size="4" readonly="readonly"/>&nbsp;<input size="4" placeholder="股票期权" readonly="readonly"/></span></p> 
+                </div>
+                 <div id="workdivright14" class="workdiv underline">
+                	<p><a href="#">恺英网络</a></p><br>
+                    <p class="fontsize"><span class="fontcolor">领域：</span> 移动互联网,游戏<span class="fontcolor">创始人：</span>王悦<span class="fontcolor">阶段：</span>初创型(未融资))<br><br><span class="fontcolor">规模：</span>500-2000人<br><br><span class="fontcolor"><input readonly="readonly" size="4" placeholder="年终分红" />&nbsp;<input placeholder="游戏公司" size="4" readonly="readonly"/>&nbsp;<input size="4" placeholder="股票期权" readonly="readonly"/></span></p> 
+                </div>
+                 <div id="workdivright15" class="workdiv underline">
+                	<p><a href="#">在路上</a></p><br>
+                    <p class="fontsize"><span class="fontcolor">领域：</span>移动互联网,在线旅游<span class="fontcolor">创始人：</span>黄天赐<span class="fontcolor">阶段：</span>成熟型(C轮)<br><br><span class="fontcolor">规模：</span>50-150人<br><br><span class="fontcolor"><input readonly="readonly" size="4" placeholder="年终分红" />&nbsp;<input placeholder="弹性工作" size="4" readonly="readonly"/>&nbsp;<input size="4" placeholder="股票期权" readonly="readonly"/></span></p> 
+                </div>
+            </div>
+        </div>
+        <div id="workdiv2">        	
+			<div id="workdivleft">
+				<div id="workdivleft1" class="workdiv">            
+	         			<p><a href="#">运营总监</a>&nbsp;<span class="fontcolor">[北京]</span></p><br>
+                        <p class="fontsize"><span class="fontcolor">月薪：</span> 15k-20k <span class="fontcolor">经验：</span> 3-5年 <span class="fontcolor">最低学历：</span> 本科<br><br> 
+<span class="fontcolor">职位诱惑：</span>发展前景<br><br>1天前发布</p>
+                </div>
+                <div id="workdivleft2" class="workdiv">
+                	<p><a href="#">售前工程师（有运维经验者优先）</a>&nbsp;<span class="fontcolor">[北京]</span></p><br>
+                    <p class="fontsize"><span class="fontcolor">月薪：</span> 6k-12k <span class="fontcolor">经验：</span> 3-5年 <span class="fontcolor">最低学历：</span> 大专<br><br> 
+<span class="fontcolor">职位诱惑：</span>五险一金+商业保险+带薪年假+奖金等<br><br>1天前发布</p> 
+                </div>
+                <div id="workdivleft3" class="workdiv">
+                	<p><a href="#">手机游戏运营</a>&nbsp;<span class="fontcolor">[南京]</span></p><br>
+                    <p class="fontsize"><span class="fontcolor">月薪：</span> 4k-8k <span class="fontcolor">经验：</span> 1-3年 <span class="fontcolor">最低学历：</span> 本科<br><br> 
+<span class="fontcolor">职位诱惑：</span>工作氛围和谐~正面激励成长~福利好等<br><br>1天前发布</p> 
+                </div>
+                <div id="workdivleft4" class="workdiv">
+                	<p><a href="#">葡萄酒内容运营专员</a>&nbsp;<span class="fontcolor">[广州]</span></p><br>
+                    <p class="fontsize"><span class="fontcolor">月薪：</span> 5k-8k <span class="fontcolor">经验：</span> 1-3年 <span class="fontcolor">最低学历：</span> 本科<br><br> 
+<span class="fontcolor">职位诱惑：</span>喝着世界美酒快乐地工作！<br><br>1天前发布</p> 
+                </div>
+                 <div id="workdivleft5" class="workdiv">
+                	<p><a href="#">百度游戏UI设计</a>&nbsp;<span class="fontcolor">[北京]</span></p><br>
+                    <p class="fontsize"><span class="fontcolor">月薪：</span> 7k-14k <span class="fontcolor">经验：</span> 1-3年 <span class="fontcolor">最低学历：</span> 本科<br><br> 
+<span class="fontcolor">职位诱惑：</span>喜欢游戏，喜欢生活，游戏生活~<br><br>1天前发布</p> 
+                </div>
+                 <div id="workdivleft6" class="workdiv">
+                	<p><a href="#">IOS</a>&nbsp;<span class="fontcolor">[北京]</span></p><br>
+                    <p class="fontsize"><span class="fontcolor">月薪：</span> 13k-26k <span class="fontcolor">经验：</span> 不限 <span class="fontcolor">最低学历：</span> 本科<br><br> 
+<span class="fontcolor">职位诱惑：</span>中国第一只能手机广告平台~<br><br>1天前发布</p> 
+                </div>
+            </div>
+            <div id="workdivright">
+            	 <div id="workdivright1" class="workdiv underline">
+                	<p><a href="#">节操精选</a></p><br>
+                    <p class="fontsize"><span class="fontcolor">领域：</span>移动互联网<span class="fontcolor">创始人：</span>陈桦<span class="fontcolor">阶段：</span>初创型<br><br> 
+<span class="fontcolor">规模：</span>小于15人<br><br><span class="fontcolor"><input readonly="readonly" size="6" placeholder="移动互联网" />&nbsp;<input placeholder="五险一金" size="4" readonly="readonly"/>&nbsp;<input size="4" placeholder="扁平管理" readonly="readonly"/></span></p> 
+                </div>
+                 <div id="workdivright2" class="workdiv underline">
+                	<p><a href="#">监控宝</a></p><br>
+                    <p class="fontsize"><span class="fontcolor">领域：</span>云计算\大数据<span class="fontcolor">阶段：</span>成长型(A轮)<br><br><span class="fontcolor">规模：</span>50-150人<br><br><span class="fontcolor"><input readonly="readonly" size="2" placeholder="商业险" />&nbsp;<input placeholder="五险一金" size="4" readonly="readonly"/>&nbsp;<input size="2" placeholder="福利好" readonly="readonly"/></span></p> 
+                </div>                            
+            </div>            
+        </div>
+        <div id="foot1">
+        	<span><a href="seemore.html">查看更多☞</a></span>
+        </div>
+        <div id="foot2">
+        	<hr>
+           <dl>
+			        <dt><p style="color:#434343">友情链接</p></dt>
+			        <dd>
+			        		<a href="http://www.zhuqu.com/" target="_blank">住趣家居网</a> <span>|</span>
+			        		<a href="http://www.woshipm.com/" target="_blank">人人都是产品经理</a> <span>|</span>
+			        		<a href="http://zaodula.com/" target="_blank">互联网er的早读课</a> <span>|</span>
+			                <a href="http://lieyunwang.com/" target="_blank">猎云网</a> <span>|</span>
+			        		<a href="http://www.ucloud.cn/" target="_blank">UCloud</a> <span>|</span>
+			          		<a href="http://www.iconfans.com/" target="_blank">iconfans</a>  <span>|</span>
+			          		<a href="http://www.html5dw.com/" target="_blank">html5梦工厂</a>   <span>|</span>
+			          		<a href="http://www.sykong.com/" target="_blank">手游那点事</a> 
+			          		
+			          		<a href="http://www.php100.com/" target="_blank">php100</a> <span>|</span>
+			          		<a href="http://www.uehtml.com/" target="_blank">uehtml</a> <span>|</span>
+			          		<a href="http://www.w3cplus.com/" target="_blank">W3CPlus</a> <span>|</span>
+			          		<a href="http://www.boxui.com/" target="_blank">盒子UI</a> <span>|</span>
+			          		<a href="http://www.uimaker.com/" target="_blank">uimaker</a> <span>|</span>
+			          		<a href="http://www.yixieshi.com/" target="_blank">互联网的一些事</a> <span>|</span>
+			          		<a href="http://www.chuanke.com/" target="_blank">传课网</a> <span>|</span>
+			          		<a href="http://www.eoe.cn/" target="_blank">安卓开发</a> <span>|</span>
+			          		<a href="http://www.eoeandroid.com/" target="_blank">安卓开发论坛</a> 
+			          		<a href="http://hao.360.cn/" target="_blank" >360安全网址导航</a> <span>|</span>
+			          		<a href="http://se.360.cn/" target="_blank" >360安全浏览器</a> <span>|</span>
+			          		<a href="http://www.hao123.com/" target="_blank" >hao123上网导航</a> <span>|</span>
+			          		<a href="http://www.ycpai.com" target="_blank" >互联网创业</a><span>|</span>
+			          		<a href="http://www.zhongchou.cn" target="_blank" >众筹网</a><span>|</span>
+			          		<a href="http://www.marklol.com/" target="_blank" >马克互联网</a><span>|</span>
+			          		<a href="http://www.chaohuhr.com/" target="_blank" >巢湖英才网</a>
+			          		
+			          		<a href="http://www.zhubajie.com/" target="_blank" >创意服务外包</a><span>|</span>
+			          		<a href="http://www.thinkphp.cn/" target="_blank" >thinkphp</a><span>|</span>
+			          		<a href="http://www.chuangxinpai.com/" target="_blank" >创新派</a><span>|</span>
+
+			          		<a href="http://w3cshare.com/" target="_blank" >W3Cshare</a><span>|</span>
+			          		<a href="http://www.518lunwen.cn/" target="_blank" >论文发表网</a><span>|</span>
+			          		<a href="http://www.199it.com" target="_blank" >199it</a><span>|</span>
+
+			          		<a href="http://www.shichangbu.com" target="_blank" >市场部网</a><span>|</span>
+			          		<a href="http://www.meitu.com/" target="_blank" >美图公司</a><span>|</span>
+			          		<a href="https://www.teambition.com/" target="_blank" >Teambition</a>
+			          		<a href="http://oupeng.com/" target="_blank" >欧朋浏览器</a><span>|</span>
+			          		<a href="http://iwebad.com/" target="_blank">网络广告人社区</a>
+			          		<a href="h/af/flink.html" target="_blank" class="more">更多</a>
+			        </dd>
+			    </dl>
+
+        </div>
+        <div id="foot3">
+        	<span id="fs1"><a href="">联系我们</a></span>&nbsp;
+            <span id="fs2"><a href="">互联网公司导航</a></span>&nbsp;
+            <span id="fs3"><a href="">拉钩微博</a></span>&nbsp;
+            <span id="fs4"><a href="">拉钩微信</a></span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <span id="fs5"><a>©2013-2014LOGO</a></span>&nbsp;
+            <span id="fs6"><a href="">京ICP备14023790号-2</a></span>
+        </div>
+        <div id="hidefootimg">
+        	<img src="images/二维码/lagou.png" />
+        </div>                
+    </div>    
+    <div id="container5"></div>
+</div>
+</body>
+</html>

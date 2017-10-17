@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>发布职位</title>
+<script src="js/jquery.js"></script>
+<script src="js/job.js"></script>
+</head>
+<link type="text/css" rel="stylesheet" href="css/job.css">
+<link href="images/logo1.png" rel="Shortcut Icon">
+<body>
+<div id="bigDiv">
+	<div id="head">
+    	<div id="head-1"></div>
+		<div id="head-2">
+			<div id="headleft"></div>
+            <div id="headmiddle">
+            	<div id="middle-1">
+                	<img class="headImg" src="images/logo.png">
+                </div>
+                <div id="middle-2">
+                	<div id="middleleft">
+                    	<ul>
+                        	<a href="index.html"><li>首页</li></a>
+                            <a href="company.html"><li>公司</li></a>
+                            <a href="#"><li>论坛</li></a>
+                            <a href="resume.html"><li>简历管理</li></a>
+                            <a href="#"><li style="color:#000000;">发布职位</li></a>                            
+                        </ul>
+                    </div>
+                    <div id="middleright">               
+                    	<a href="" id="headdisplay"><span>郭萌&nbsp;&nbsp;&nbsp;&nbsp;▼</span></a>
+                        <ul>
+                        	<a href="validresume.html"><li>我发布的职位</li></a>
+                            <a href="validresume.html"><li>我收到的简历</li></a>
+                            <a href="mycompany.html"><li>我公司的主页</li></a>
+                            <a href="recommend.html"><li id="liboder">我要找工作</li></a>                          
+                            <a href="accountset.html"><li>账号设置</li></a>
+                            <a href="login.html"><li>退出</li></a>                              
+                        </ul>                        
+                    </div>
+                </div>
+            </div>
+            <div id="headright"></div>
+		</div>
+    </div>
+     <!------------------------------------head end----------------------------------------->
+     <div id="main">
+     	<div id="mainleft">
+        	<a href=""><div id="mainleft1">
+            	<span class="mainleft1">✚发布新职位</span>
+            </div></a>
+            <div id="mainleft2">
+            			<span>我收到的简历</span>            	
+                        <ul>
+                        	<a href="waitresume.html"><li>待处理简历</li></a>
+                            <a href="pendingresume.html"><li>待定简历</li></a>
+                            <a href="haveinform.html"><li>已通知面试简历</li></a>
+                            <a href="improperresume.html"><li>不合适简历</li></a>                          
+                            <a href="filterresume.html"><li>自动过滤简历</li></a>
+                        </ul>                        
+            </div>
+            <div id="mainleft3">
+            	<span>我发布职位</span>
+                        <ul>
+                        	<a href="validresume.html"><li>有效职位</li></a>
+                            <a href="havedisper.html"><li>已下线职位</li></a>
+                        </ul> 
+            </div>
+            <div id="mainleft4">
+            	<div id="mainleft4-1">                	
+                    <p><span id="middlefont">想要更多更好的简历</span></p>
+                    <p><span class="fontcolor">就用拉勾招聘加速助手<strong></strong></span></p>
+                </div>
+                <div id="mainleft4-2">
+                	<p><span id="middlefont">咨询:<a class="acolor" href="jessica@lagou.com">jessica@lagou.com</a></span></p><br>
+                    <p><span class="fontcolor">010-57286512</span></p>
+                </div>
+            </div>
+            <div id="mainleft5">
+            	<div id="mainleft5-1">                	
+                    <p><span id="middlefont">加入互联网HR交流群</span></p>
+                    <p><span class="fontcolor">跟同行聊聊</span></p>
+                </div>
+                <div id="mainleft5-2">
+                	<p><span class="fontcolor">338167634</span></p>
+                </div>
+            </div>
+        </div>
+        <div id="mainright">
+        	<div id="mainright1">
+            	<div id="mainright1-1">
+            	<a href=""><span class="mainleft1">发布新职位</span></a>                
+            	</div>
+                <p>今日已发布<span class="greencolor">0</span>个职位，还可以发布<span class="greencolor">5</span>个职位</p>                
+            </div>
+            <div id="mainright2">
+            <form action="" method="post">
+            	<table>
+                	<tr>
+                    	<td><span class="redcolor">*</span></td>
+                        <td>职位类别：</td>
+                        <td><input type="text" required="required" placeholder="请输入职位类别：如：后端" /></td>
+                    </tr>
+                    <tr>
+                    	<td><span class="redcolor">*</span></td>
+                        <td>职位名称</td>
+                        <td><input type="text" required="required" placeholder="请输入职位名称：如产品经理" /></td>
+                    </tr>
+                    <tr>
+                    	<td><span class="redcolor"></span></td>
+                        <td>所属部门</td>
+                        <td><input type="text" placeholder="请输入部门名称" /></td>
+                    </tr>
+                    <tr>
+                    	<td><span class="redcolor">*</span></td>
+                        <td>月薪范围<input type="text" required="required" placeholder="最低月薪" />K</td>
+                        <td><input type="text" placeholder="最高月薪" required="required" />K</td>
+                    </tr>
+                    <tr>
+                    	<td><span class="redcolor">*</span></td>
+                        <td>工作城市</td>
+                        <td><input type="text" required="required" placeholder="请输入城市名称：如北京" /></td>
+                    </tr>
+                    <tr>
+                    	<td><span class="redcolor">*</span></td>
+                        <td>工作经验</td>
+                        <td>
+                        	<select>
+                                <option selected="selected">不限</option>
+                                <option>1年</option>
+                                <option>2年</option>
+                                <option>3年</option>
+                                <option>3年以上</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                    	<td><span class="redcolor">*</span></td>
+                        <td>学历要求</td>
+                        <td>
+                        	<select>
+                                <option>大专</option>
+                                <option selected="selected">本科</option>
+                                <option>研究生</option>
+                                <option>博士</option>
+                                <option>其他</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                    	<td><span class="redcolor">*</span></td>
+                        <td>职位诱惑</td>
+                        <td>
+                        	<input type="text" required="required" placeholder="20字描述职位的吸引力，如：福利、前景" />                       	
+                        </td>
+                    </tr>
+                    <tr>
+                    	<td><span class="redcolor">*</span></td>
+                        <td>职位描述</td>
+                        <td>
+                        	<textarea id="txtarea2" required="required" placeholder="请用100字描述你提供的职位"></textarea><br>
+                            <span id="num2">您还可以输入<font color="#FF0000">100</font>个字</span>
+                        </td>
+                    </tr>
+                    <tr>
+                    	<td><span class="redcolor">*</span></td>
+                        <td>工作地址</td>
+                        <td><input type="text" required="required" placeholder="请输入工作地址" /></td>
+                    </tr>
+                    <tr>
+                    	<td><span class="redcolor"></span></td>                        
+                        <td colspan="2">我们将在职位详情页以地图方式精准呈现给用户 <a href="map.html">预览地图</a></td>
+                    </tr>
+                    <tr>
+                    	<td><span class="redcolor">*</span></td>
+                        <td colspan="2">接收简历邮箱： admin@admin.com</td>
+                    </tr>
+                    <tr>
+                    	<td><span class="redcolor"></span></td>
+                        <td colspan="2">同时简历自动发送至邮箱（仅一个）<input type="text" /></td>
+                    </tr>
+                    <tr>
+                    	<td></td>
+                        <td><span><input class="bgcolor" type="reset" value="重置" /></span></td>
+                        <td><span><input class="bgcolor" type="submit" value="发布" /></span></td>
+                    </tr>
+                </table>
+            </form>
+            </div>
+            <div id="mainright3"></div>
+        </div>        
+     </div>
+</div>
+<div id="foot3">
+        		<span id="fs1"><a href="">联系我们</a></span>&nbsp;
+	            <span id="fs2"><a href="">互联网公司导航</a></span>&nbsp;
+    	        <span id="fs3"><a href="">拉钩微博</a></span>&nbsp;
+        	    <span id="fs4"><a href="">拉钩微信</a></span>&nbsp;&nbsp;&nbsp;&nbsp;
+            	<span id="fs5"><a>©2013-2014LOGO</a></span>&nbsp;
+	            <span id="fs6"><a href="">京ICP备14023790号-2</a></span>
+   	  </div>
+   	  <div id="hidefootimg">
+        		<img src="images/二维码/lagou.png" />
+   	  </div> 
+</body>
+</html>

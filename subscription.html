@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>我的订阅</title>
+<script src="js/jquery.js"></script>
+<script src="js/subscription.js"></script>
+</head>
+<link type="text/css" rel="stylesheet" href="css/subscription.css">
+<link href="images/logo1.png" rel="Shortcut Icon">
+<body>
+<div id="bigDiv">
+	<div id="head">
+    	<div id="head-1"></div>
+		<div id="head-2">
+			<div id="headleft"></div>
+            <div id="headmiddle">
+            	<div id="middle-1">
+                	<img class="headImg" src="images/logo.png">
+                </div>
+                <div id="middle-2">
+                	<div id="middleleft">
+                    	<ul>
+                        	<a href="index.html"><li>首页</li></a>
+                            <a href="company.html"><li>公司</li></a>
+                            <a href="#"><li>论坛</li></a>
+                            <a href="resume.html"><li>我的简历</li></a>
+                            <a href="job.html"><li>发布职位</li></a>
+                        </ul>
+                    </div>
+                    <div id="middleright">
+                    	<a href="login.html"><span>登录|</span></a>
+                        <a href="register.html"><span>注册</span></a>
+                    </div>
+                </div>
+            </div>
+            <div id="headright"></div>
+		</div>
+    </div>
+    <!--head end-->
+    <div id="main">
+    	<div id="mainleft">
+        	<div id="mainleft0" class="mainleft">
+            	<p><h1>我的职位订阅</h1></p><br>
+                <p><font color="#666666">筛选下面的职位订阅条件，实现精准匹配的个性化职位定制，我们帮你挑工作！</font></p><br>
+            </div>
+            <div id="mainleft1" class="mainleft">
+            <form method="post" action="">            	
+            	<div id="mainleft1-1" class="mainleft">            	
+            		<table>
+                    	<tr>
+                        	<td><img src="images/subscription/1.png" /></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                        	<td><input type="email" placeholder="请输入邮箱地址" required="required" class="input" /></td>
+                            <td><font color="#FF0000"><span class="tip"></span></font></td>
+                        </tr>
+                        <tr>
+                        	<td>
+                            	<select class="input">
+                                	<option selected="selected" value="1">请选择周期</option>
+                                    <option value="2">3天以内</option>
+                                    <option value="3">1周以内</option>
+                                </select>
+                            </td>
+                            <td><font color="#FF0000"><span class="tip"></span></font></td>
+                        </tr>                       
+                    </table>
+                </div>
+                <div id="mainleft1-2" class="mainleft">            	
+                	<table>
+                    	<tr>
+                        	<td><img src="images/subscription/2.png" /></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                        	<td><input type="text" required="required" placeholder="请输入职位名称" class="input" /></td>
+                            <td><font color="#FF0000"><span class="tip"></span></font></td>
+                        </tr>
+                        <tr>
+                        	<td></td>
+                            <td></td>
+                        </tr>                       
+                    </table>
+            	</div>
+                <div id="mainleft1-3" class="mainleft">
+                	<table>
+                    	<tr>
+                        	<td><img src="images/subscription/3.png" /></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                        	<td><input type="text" placeholder="请输入工作地点" required="required" class="input" /></td>
+                            <td><font color="#FF0000"><span class="tip"></span></font></td>
+                        </tr>
+                        <tr>
+                        	<td></td>
+                            <td></td>
+                        </tr>                       
+                    </table>            	
+            	</div>
+                <div id="mainleft1-4" class="mainleft">
+                	<table>
+                    	<tr>
+                        	<td><img src="images/subscription/4.png" /></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                        	<td>
+                            	<select class="input">
+                                	<option selected="selected" value="1">发展阶段</option>
+                                    <option value="2">初创</option>
+									<option value="3">成长</option>
+                                    <option value="4">成熟</option>
+                                    <option value="5">上市</option>
+                                </select>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                        	<td></td>
+                            <td></td>
+                        </tr>                       
+                    </table>            	
+            	</div>
+                <div id="mainleft1-5" class="mainleft">        
+                	<table>
+                    	<tr>
+                        	<td><img src="images/subscription/5.png" /></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                        	<td><select class="input">
+                                	<option selected="selected" value="1">行业领域</option>
+                                    <option value="2">移动互联网</option>
+									<option value="3">教育</option>
+                                    <option value="4">医疗</option>
+                                    <option value="5">社会</option>
+                                </select></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                        	<td></td>
+                            <td></td>
+                        </tr>                       
+                    </table>    	
+            	</div>
+                <div id="mainleft1-6" class="mainleft">        
+                	<table>
+                    	<tr>
+                        	<td><img src="images/subscription/6.png" /></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                        	<td><select class="input">
+                                	<option selected="selected" value="1">月薪范围</option>
+                                    <option value="2">2k-5k</option>
+									<option value="3">5-8k</option>
+                                    <option value="4">8-15k</option>
+                                    <option value="5">15k以上</option>
+                                </select></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                        	<td></td>
+                            <td></td>
+                        </tr>                       
+                    </table>    	
+            	</div>
+            </div>
+            <div id="mainleft1-7">
+            	<table>                    	
+                   <tr>
+                    	<td><a href="recommend.html"><span class="block">保存</span></a>&nbsp;&nbsp;<a href="javascript:void(0)"><span class="block">取消</span></a><span id="hide"><input type="reset"/></span></td>
+                        <td></td>
+                   </tr>                       
+            </table>  
+            </div></form>
+        </div>
+        <div id="mainright" class="mainright">
+        	<img src="images/subscription/tu2.png" />        	
+        </div>       
+    </div>    
+</div> 
+  <!------------------------------------------------------------------>
+        <div id="foot3">
+        		<span id="fs1"><a href="">联系我们</a></span>&nbsp;
+	            <span id="fs2"><a href="">互联网公司导航</a></span>&nbsp;
+    	        <span id="fs3"><a href="">拉钩微博</a></span>&nbsp;
+        	    <span id="fs4"><a href="">拉钩微信</a></span>&nbsp;&nbsp;&nbsp;&nbsp;
+            	<span id="fs5"><a>©2013-2014LOGO</a></span>&nbsp;
+	            <span id="fs6"><a href="">京ICP备14023790号-2</a></span>
+   	  	</div>
+   	  	<div id="hidefootimg">
+        		<img src="images/二维码/lagou.png" />
+   	  	</div> 
+</body>
+</html>

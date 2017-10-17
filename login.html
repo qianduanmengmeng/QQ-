@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>请登录</title>
+<script src="js/jquery.js"></script>
+<script src="js/login.js"></script>
+<script src="js/jquery.validate.js"></script>
+</head>
+<link type="text/css" rel="stylesheet" href="css/login.css">
+<link href="images/logo1.png" rel="Shortcut Icon">
+<body>
+	<div id="alldiv">
+    	<div id="headdiv">
+        	<div id="logoimg">
+            	<img src="images/login/logo_white.png" />
+            </div>
+            <div id="cloudimg1">
+            	<marquee direction="right" scrolldelay="200" behavior="alternate" ><img src="images/login/cloud_s.png" /></marquee>
+             </div>
+            <div id="cloudimg2">
+            	<marquee direction="left" scrolldelay="200" behavior="alternate" ><img src="images/login/cloud_m.png" /></marquee></div>
+        </div>
+        <div id="formdiv">
+        	<div id="formdivleft">
+        		<form id="commentForm" method="post" action="index.html">
+            		<table cellspacing="20">
+    					<tr><td>
+                        	<input type="email"  id="txtEmail" name="email" class="required email" placeholder="请输入邮箱地址" />
+                        </td></tr>
+                        <tr><td>
+                        	<input type="password" id="password" placeholder="请输入密码"  required="required"/>
+                        </td></tr>
+                        <tr><td>
+                        	<input id="ch" type="checkbox" />记住我&nbsp;&nbsp;<a href="">忘记密码？</a>
+                        </td></tr>
+                        <tr><td>
+                        	<a href="index.html"><input id="submitlogin" type="submit" value="登录" /></a>
+                        </td></tr>            
+ 	               	</table>
+            	</form>
+            </div>
+            <div id="formdivright">
+            	<p class="changecolor">还没有拉勾网？</p><br>
+                <p class="changecolor"><a href="register.html">立即注册&nbsp;＞＞</a></p><br><br><br><br>
+                <p class="changecolor">使用以下账号直接登录</p><br>
+                <p class="changecolor"><a href=""><img src="images/login/qq.png" /></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href=""><img src="images/login/weibo.png" /></a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

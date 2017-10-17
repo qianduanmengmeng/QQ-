@@ -1,0 +1,515 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>我的简历</title>
+<script src="js/jquery.js"></script>
+<script src="js/resume.js"></script>
+</head>
+<link href="css/resume.css" type="text/css" rel="stylesheet" >
+<link href="images/logo1.png" rel="Shortcut Icon">
+<body>
+<div id="bigDiv">
+	<div id="head">
+    	<div id="head-1"></div>
+		<div id="head-2">
+			<div id="headleft"></div>
+            <div id="headmiddle">
+            	<div id="middle-1">
+                	<img class="headImg" src="images/logo.png">
+                </div>
+                <div id="middle-2">
+                	<div id="middleleft">
+                    	<ul>
+                        	<a href="index.html"><li>首页</li></a>
+                            <a href="company.html"><li>公司</li></a>
+                            <a href="#"><li>论坛</li></a>
+                            <a href="#"><li style="color:#000000;">我的简历</li></a>                            
+                        </ul>
+                    </div>
+                    <div id="middleright">               
+                    	<a href="" id="headdisplay"><span>郭萌&nbsp;&nbsp;&nbsp;&nbsp;▼</span></a>
+                        <ul>
+                        	<a href="javascript:void(0)"><li>我的简历</li></a>
+                            <a href="collection.html"><li>我收藏的职位</li></a>
+                            <a href="subscription.html"><li>我的订阅</li></a>
+                            <a href="job.html"><li id="liboder">我要招人</li></a>                          
+                            <a href="accountset.html"><li>账号设置</li></a>
+                            <a href="login.html"><li>退出</li></a>                              
+                        </ul>                        
+                    </div>
+                </div>
+            </div>
+            <div id="headright"></div>
+		</div>
+    </div>
+      <!------------------------------------head end----------------------------------------->
+      <div id="main">
+    	<div id="mainleft">
+        	<div id="mainleft1" class="mainleft">
+            	<P><span id="sp1">郭萌</span>的简历&nbsp;&nbsp;<span id="reset"><a href="javascript:void(0)">重命名 </a></span>|<span><a href="javascript:void(0)"> 预览</a></span><span id="sp2">最后一次更新：2014-07-01 15:14</span></P>
+            </div>
+            <div id="mainleft1-2">
+            	<P><span id="sp1"><input type="text" value="郭萌" placeholder="姓名" /></span><span id="resave"><a href="javascript:void(0)">保存</a></span>|<span id="presee"><a href="jump"> 预览</a></span><span id="sp2">最后一次更新：2014-07-01 15:14</span></P>
+            </div>
+            <div id="mainleft2" class="mainleft">
+            	<div id="mainleft2-1" class="mainleft2-1">
+                	<canvas style="float:left;" id="step1Canvas" width='150' height='150' >
+			    			您的浏览器不支持HTML5，请尝试其他浏览器！
+					</canvas>
+                </div>
+                <div id="mainleft2-2">
+                	<p id="resume1"><span>工作经历最能体现自己的工作能力，且完善后才可投递简历哦！</span></p>
+                    <p><a href="#jump"><span id="resume2">马上去完善</span></a></p>
+                </div>
+            </div>
+            <div id="mainleft3" class="mainleft">
+            	<div id="mainleft3-1">
+                	<table>
+                    	<tr>
+                        	<td><img src="images/resume/profile_square.png" />&nbsp;</td>
+                            <td><span>基本信息</span></td>
+                        </tr>
+                        <tr>
+                        	<td></td>
+                            <td><span id="name">郭萌</span> | <span id="sex">女</span> | <span id="record">本科</span> | <span id="experience">三年工作经验</span></td>
+                        </tr>
+                        <tr>
+                        	<td></td>
+                            <td><span id="phone">15644444444</span> | <span id="email">2857201545@qq.com</span></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="mainleft3-2">
+                	<div id="img1"><img src="images/resume/default_headpic.png" /></div>
+                    <a id="show" href="javascript:void(0)"><div id="img2"><img src="images/resume/record.png" /></div></a>                    
+                </div>
+                <div id="hidemainleft3">
+                	<table>
+                    	<tr>
+                        	<td><span class="redcolor">*</span>
+                            	<input id="formname" type="text" value="郭萌" placeholder="姓名" />&nbsp;&nbsp;&nbsp;<span class="block">女</span>&nbsp;<span class="block">女</span>
+                                <div id="hideimg1">
+                                	<img src="images/resume/user_choose.png"/>
+                                </div>
+                                <div id="hideimg2">
+                                	<img src="images/resume/user_choose.png"/>
+                                </div>
+                            </td>
+                            <td rowspan="6">
+                            	<div id="file1">                                                               	
+                                	<a id="changeimga" href="javascript:void(0)" style="color:#FFFFFF"><img src="images/resume/default_headpic.png" />                                    
+                                	<div id="changeimg">更改图片</div></a>
+                                    <input type="file" style="opacity:0; position:absolute; margin-top:50px; width:50px" />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td><span class="redcolor">*</span>
+                            <select id="formrecord" class="inputsize">
+                            	<option>大专</option>
+                                <option selected="selected">本科</option>
+                                <option>硕士</option>
+                                <option>博士</option>
+                                <option>其他</option>
+                            </select>&nbsp;
+                            <span class="redcolor" >*</span>
+                            <select class="inputsize" id="formexperience">
+                            	<option>应届毕业生</option>
+                                <option>一年经验</option>
+                                <option>二年经验</option>
+                                <option selected="selected">三年经验</option>
+                                <option>三年以上</option>
+                            </select>
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td><span class="redcolor">*</span>
+                            	<input id="formphone" type="text" class="formsize" value="15644444444" placeholder="手机号" required="required" />
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td><span class="redcolor">*</span>
+                            	<input type="email" id="formemail" class="formsize" required="required" value="2857201545@qq.com" placeholder="邮箱地址" />
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td>
+                             &nbsp;<select class="formsize">
+                            	<option>我目前已经离职，可以快速到岗</option>
+                                <option selected="selected">我是应届毕业生</option>
+                                <option>我暂时不想找工作</option>
+                                <option>我目前正在职，想跳槽</option>                                
+                            </select>
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td>
+                            	<a id="save" href="javascript:void(0)"><span class="button">保存</span></a>&nbsp;&nbsp;&nbsp;
+&nbsp;                                <a id="cancel" href="javascript:void(0)"><span class="button">取消</span></a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id="mainleft4" class="mainleft">
+            	<div id="mainleft4-1">
+                	<table>
+                    	<tr>
+                        	<td><img src="images/resume/profile_square.png" />&nbsp;<span>期望工作</span></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                        	<td rowspan="3" height="133px">
+                            	<div class="hideimg"><img src="images/resume/addup.png" /></div>
+                            </td>
+                            <td>填写准确的期望工作可以大大的提高求职的效率哦...</td>
+                        </tr>
+                        <tr>
+                            <td>快来添加期望工作吧</td>
+                        </tr>
+                        <tr>                        	
+                            <td><a class="afontcolor" href="javascript:void(0)">添加工作</a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="hidemainleft4">       
+                	<table>
+                    	<tr>
+                        	<td>&nbsp;&nbsp;
+                            	<input type="text" placeholder="期望的城市：如北京" required="required" />
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td>&nbsp;&nbsp;
+                            	<input type="text" placeholder="期望的职位：产品经理" required="required" />
+                            </td>
+                        </tr>
+                        <tr>
+                        <td>&nbsp;&nbsp;
+                        	<select class="inputsize">
+                            	<option selected="selected">月薪</option>
+                                <option>3k</option>
+                                <option>3-5k</option>
+                                <option>5-10k</option>
+                                <option>10-25k</option>
+                                <option>25k以上</option>
+                            </select>
+                         </td>
+                        </tr>                        
+                        <tr>
+                        	<td>&nbsp;
+                            	<a href="javascript:void(0)"><span class="button hideleft4">保存</span></a>&nbsp;&nbsp; <a href="javascript:void(0)"><span class="button hideleft4">取消</span></a>
+                            </td>
+                        </tr>
+                    </table>         	
+                </div>
+            </div>
+            <div id="mainleft5" class="mainleft">
+            	<div id="mainleft5-1">
+                	<table>
+                    	<tr>
+                        	<td><img src="images/resume/profile_square.png" />&nbsp;<span><a name="jump">工作经历</a></span></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                        	<td rowspan="3" height="133px">
+                            	<div class="hideimg"><img src="images/resume/addup.png" /></div>
+                            </td>
+                            <td>填写准确的期望工作可以大大的提高求职的效率哦...</td>
+                        </tr>
+                        <tr>
+                            <td>快来添加期望工作吧</td>
+                        </tr>
+                        <tr>                        	
+                            <td><a class="afontcolor" href="javascript:void(0)">添加工作经历</a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="hidemainleft5">
+                	<table>
+                    	<tr>
+                        	<td>&nbsp;&nbsp;
+                            	<input type="text" placeholder="公司名称" required="required" />
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td>&nbsp;&nbsp;
+                            	<input type="text" placeholder="职位" required="required" />
+                            </td>
+                        </tr>
+                        <tr>
+                        <td>&nbsp;&nbsp;
+                        	<select class="inputsize">
+                            	<option selected="selected">开始年份</option>
+                                <option>2016</option>
+                                <option>2015</option>
+                                <option>2014</option>
+                                <option>2013</option>
+                                <option>2012</option>
+                            </select>
+                         </td>
+                        </tr>                        
+                        <tr>
+                        	<td>&nbsp;
+                            	<a href="javascript:void(0)"><span class="button hideleft4">保存</span></a>&nbsp;&nbsp; <a href="javascript:void(0)"><span class="button hideleft4">取消</span></a>
+                            </td>
+                        </tr>
+                    </table>                	
+                </div>
+            </div>
+            <div id="mainleft6" class="mainleft">
+            	<div id="mainleft6-1">
+                	<table>
+                    	<tr>
+                        	<td><img src="images/resume/profile_square.png" />&nbsp;<span>项目经验</span></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                        	<td rowspan="3" height="133px">
+                            	<div class="hideimg"><img src="images/resume/addup.png" /></div>
+                            </td>
+                            <td>填写准确的期望工作可以大大的提高求职的效率哦...</td>
+                        </tr>
+                        <tr>
+                            <td>快来添加期望工作吧</td>
+                        </tr>
+                        <tr>                        	
+                            <td><a class="afontcolor" href="javascript:void(0)">添加项目经验</a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="hidemainleft6">
+                	  <table>
+                    	<tr>
+                        	<td>&nbsp;&nbsp;
+                            	<input type="text" placeholder="项目名称" required="required" />
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td>&nbsp;&nbsp;
+                            	<input type="text" placeholder="担任职务" required="required" />
+                            </td>
+                        </tr>
+                        <tr>
+                        <td>&nbsp;&nbsp;
+                        	<textarea placeholder="自我描述......"></textarea>
+                         </td>
+                        </tr>                        
+                        <tr>
+                        	<td>&nbsp;
+                            	<a href="javascript:void(0)"><span class="button hideleft4">保存</span></a>&nbsp;&nbsp; <a href="javascript:void(0)"><span class="button hideleft4">取消</span></a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id="mainleft7" class="mainleft">
+            	<div id="mainleft7-1">
+                	<table>
+                    	<tr>
+                        	<td><img src="images/resume/profile_square.png" />&nbsp;<span>教育背景</span></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                        	<td rowspan="3" height="133px">
+                            	<div class="hideimg"><img src="images/resume/addup.png" /></div>
+                            </td>
+                            <td>填写准确的期望工作可以大大的提高求职的效率哦...</td>
+                        </tr>
+                        <tr>
+                            <td>快来添加期望工作吧</td>
+                        </tr>
+                        <tr>                        	
+                            <td><a class="afontcolor" href="javascript:void(0)">添加教育经历</a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="hidemainleft7">                	
+                	<table>
+                    	<tr>
+                        	<td>&nbsp;&nbsp;
+                            	<input type="text" placeholder="学校名称" required="required" />
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td>&nbsp;&nbsp;
+                            	<input type="text" placeholder="学历" required="required" />
+                            </td>
+                        </tr>
+                        <tr>
+                        <td>&nbsp;&nbsp;
+                        	<input type="text" placeholder="专业名称" required="required" />
+                         </td>
+                        </tr>                        
+                        <tr>
+                        	<td>&nbsp;
+                            	<a href="javascript:void(0)"><span class="button hideleft4">保存</span></a>&nbsp;&nbsp; <a href="javascript:void(0)"><span class="button hideleft4">取消</span></a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id="mainleft8" class="mainleft">
+            	<div id="mainleft8-1">
+                	<table>
+                    	<tr>
+                        	<td><img src="images/resume/profile_square.png" />&nbsp;<span>自我描述</span></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                        	<td rowspan="3" height="133px">
+                            	<div class="hideimg"><img src="images/resume/addup.png" /></div>
+                            </td>
+                            <td>填写准确的期望工作可以大大的提高求职的效率哦...</td>
+                        </tr>
+                        <tr>
+                            <td>快来添加期望工作吧</td>
+                        </tr>
+                        <tr>                        	
+                            <td><a class="afontcolor" href="javascript:void(0)">添加自我描述</a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="hidemainleft8">
+                	<table>                    	
+                        <tr>
+                        <td>&nbsp;&nbsp;
+                        	<textarea id="txtarea" placeholder="自我描述......"></textarea><br>                            
+                            <span id="num">您还可以输入<font color="#FF0000">600</font>个字</span>
+                         </td>
+                        </tr>                        
+                        <tr>
+                        	<td>&nbsp;
+                            	<a href="javascript:void(0)"><span class="button hideleft4">保存</span></a>&nbsp;&nbsp; <a href="javascript:void(0)"><span class="button hideleft4">取消</span></a>
+                            </td>
+                        </tr>
+                    </table>                	
+                </div>
+            </div>
+            <div id="mainleft9" class="mainleft">
+            	<div id="mainleft9-1">
+                	<table>
+                    	<tr>
+                        	<td><img src="images/resume/profile_square.png" />&nbsp;<span>作品展示</span></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                        	<td rowspan="3" height="133px">                          
+                            	<div class="hideimg"><img src="images/resume/addup.png" /></div>
+                            </td>
+                            <td>填写准确的期望工作可以大大的提高求职的效率哦...</td>
+                        </tr>
+                        <tr>
+                            <td>快来添加期望工作吧</td>
+                        </tr>
+                        <tr>                        	
+                            <td><a class="afontcolor" href="javascript:void(0)">添加作品展示</a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="hidemainleft9">
+                	<table>
+                    	<tr>
+                        	<td>&nbsp;&nbsp;
+                            	<input type="text" placeholder="请输入作品链接" required="required" />
+                            </td>
+                        </tr>
+                        <tr>
+                        <td>&nbsp;&nbsp;
+                        	<textarea id="txtarea2" placeholder="作品描述"></textarea><br>
+                            <span id="num2">您还可以输入<font color="#FF0000">100</font>个字</span>
+                         </td>
+                        </tr>                        
+                        <tr>
+                        	<td>&nbsp;
+                            	<a href="javascript:void(0)"><span class="button hideleft4">保存</span></a>&nbsp;&nbsp; <a href="javascript:void(0)"><span class="button hideleft4">取消</span></a>
+                            </td>
+                        </tr>
+                    </table>                	
+                </div>
+            </div>
+        </div>
+        <div id="mainright">       
+        	<div id="mainright1" class="mainright">
+            	<table>
+                	<tr>
+                    	<td><p class="b">我的信息</p></td>                        
+                    </tr>
+                    <tr>
+                    	<td><p><a href="collection.html">我收藏的职位</a></p></td>
+                    </tr>
+                    <tr>
+                    	<td><p><a href="recommend.html">我订阅的职位</a></p></td>
+                    </tr>
+                </table>               
+            </div>
+            <div id="mainright2" class="mainright">
+            	<table>
+                	<tr>
+                    	<td><p class="b">我的附件简历</p></td>
+                        <td><a href="javascript:void(0)" id="up"> 上传附件</a></td>                        
+                    </tr>
+                    <tr>
+                    	<td><p>无附件简历</p></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="mainright3" class="mainright">
+            	<table>
+                	<tr>
+                    	<td><p class="b">投递简历设置</p></td>
+                        <td><a href="javascript:void(0)"> 修改简历设置</a></td>                        
+                    </tr>
+                    <tr>
+                    	<td colspan="2"><p>暂未设置默认投递简历</p></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="mainright4" class="mainright">
+            	<table>
+                	<tr>
+                    	<td><p class="b">当前每日投递量：10个</p></td>                        
+                    </tr>
+                    <tr>
+                    	<td><a href="javascript:void(0)"> 邀请好友，提升投递量</a></td>                        
+                    </tr>
+                </table>
+            </div>
+            <div id="mainright5" class="mainright">
+            	<img src="images/resume/qrcode.jpg" /><br><br />
+                <p>微信扫一扫，轻松找工作</p>
+            </div>
+        </div>
+      </div>      
+    <div id="bighideresume" class="bighideresume">	
+	</div>
+	<div id="hideresume" class="hideresume">
+		<div id="hideresumehead">
+        	<span class="whitecolor">上传附件简历</span><a href="javascript:void(0)"><span class="close">×</span></a>
+    	</div>
+        <div id="hideresuemmiddle">
+        	<a href="javascript:void(0)"><span id="file2" class="whitecolor fontsize">选择上传文件</span>
+            <input type="file" style="opacity:0; position:absolute; margin:-70px 0px 0px 250px; width:50px" />
+        </div>
+        <div id="hideresumefoot">
+        	<p class="blackcolor">选择上传文件选择文件支持word、pdf、ppt、txt、wps格式文件</p>
+			<p class="blackcolor">文件大小需小于10M</p>
+            <p class="redcolor">注：若从其它网站下载的word简历，请将文件另存为.docx格式后上传</p>
+        </div>
+	</div>
+</div>
+<!-------------------------------------------------------------------->
+<div id="foot3">
+        		<span id="fs1"><a href="">联系我们</a></span>&nbsp;
+	            <span id="fs2"><a href="">互联网公司导航</a></span>&nbsp;
+    	        <span id="fs3"><a href="">拉钩微博</a></span>&nbsp;
+        	    <span id="fs4"><a href="">拉钩微信</a></span>&nbsp;&nbsp;&nbsp;&nbsp;
+            	<span id="fs5"><a>©2013-2014LOGO</a></span>&nbsp;
+	            <span id="fs6"><a href="">京ICP备14023790号-2</a></span>
+   </div>
+   	  <div id="hidefootimg">
+        		<img src="images/二维码/lagou.png" />
+   	  </div> 
+</body>
+</html>

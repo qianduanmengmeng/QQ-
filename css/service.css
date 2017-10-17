@@ -1,0 +1,19 @@
+@charset "utf-8";
+/*科e互联特效基本框架CSS*/
+
+/*科e互联特效基本框架CSS结束，应用特效时，以上样式可删除*/
+/* 效果CSS开始 */
+.box_r{ width:143px; height:auto; overflow:hidden; position:fixed; right:0; top:150px; z-index:9999;}
+.box_r .top{width:143px; height:69px; background:url(../images/cslist_top_bg.png) no-repeat;}
+.box_r .main{ width:138px; height:auto; overflow:hidden; background:url(../images/right_bg.png) repeat-y left top;text-align:left; font-size:12px; padding-left:5px;}
+.box_r .main p{ height:25px; line-height:25px; padding-left:5px;}
+.box_r .bottom{ width:143px; height:17px; background:url(../images/cslist_btm_bg.png) no-repeat;}
+.box_m{ width:315px; height:145px; background:url(../images/invite_bg.png) no-repeat; position:fixed; left:50%; top:50%; margin:-72px 0 0 -157px; display:none; z-index:20;}
+.box_m ul .close{ width:25px; height:25px; display:block; position:absolute; right:0; top:0;}
+.box_m ul{width:315px; height:145px; position:relative;}
+.box_m ul a{ display:block; width:70px; height:22px; position:absolute; top:104px;}
+/* 效果CSS结束 */
+#close{
+	display:block;
+	width:24px;
+	}

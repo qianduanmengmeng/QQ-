@@ -1,0 +1,121 @@
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;}
+body{
+	background-color:#009999;}
+#alldiv{
+	overflow:hidden;
+	width:800px;
+	margin:50px auto 0px auto;}
+#logoimg{
+	overflow:hidden;
+	float:left;}
+#cloudimg1{
+	position:relative;
+	left:0px;
+	overflow:hidden;
+	width:200px;
+	margin-left:50px;
+	float:left;}
+#cloudimg2{
+	clear:both;
+	width:255px;
+	position:relative;
+	left:0px;
+	overflow:hidden;
+	margin-left:500px;
+	}
+#headdiv{
+	}	
+#commentForm{
+	color:#787878;
+	}
+
+#commentForm a{
+	text-decoration:none;	
+	color:#999999;
+	}
+#formdiv{
+	border-bottom:5px  dotted #009999;
+	overflow:hidden;
+	height:340px;
+	background-color:#F1F1F1; }
+#formdivleft{
+	float:left;
+	margin:50px 0px 0px 50px;
+	width:50%;
+	border-right:2px dashed #CCCCCC;}
+#formdivright{
+	text-align:left;
+	float:left;
+	width:30%;
+	margin:70px 0px 0px 60px;
+	}
+#formdivright a{
+	color:#009999;
+	font-weight:bold;
+	text-decoration:none;}
+#formdivright a:hover{
+	text-decoration:underline;}
+#submitlogin{
+	border:2px solid #009999;
+	font-size:20px;
+	color:#FFFFFF;
+	background-color:#009999;
+	width:150px;
+	height:40px;}
+#txtEmail{
+	border:none;
+	width:320px;
+	height:40px}
+#password{
+	border:none;
+	width:320px;
+	height:40px;}
+.changecolor{
+	color:#999999;}
+
+.size{
+	font-size:18px;
+	margin-right:10px;
+	padding-top:10px;
+	text-height:10px;
+	text-align:center;
+	border:2px solid #ABABAB;
+	float:left;
+	width:130px;
+	height:30px;}
+#ch{
+	color:#009999;}
+#hide1{
+	display:none;
+	position:absolute;
+	font-size:18px;
+	margin-right:10px;
+	text-height:10px;
+	text-align:center;
+	border:2px solid #ABABAB;
+	float:left;
+	width:130px;
+	height:40px;
+}
+#hide1 img{
+	margin-left:108px;
+	height:60%;}
+#hide2 img{
+	margin-left:108px;
+	height:60%;}
+#hide2{
+	display:none;
+	text-align:left;
+	position:absolute;
+	font-size:18px;
+	margin-left:144px;
+	text-height:10px;
+	text-align:center;
+	border:2px solid #ABABAB;
+	float:left;
+	width:130px;
+	height:40px;
+	}
